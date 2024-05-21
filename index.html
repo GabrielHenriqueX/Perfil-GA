@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" id="topo">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,82 +9,117 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
 </head>
+
 <body>
+    <input type="checkbox" id="botao-menu">
+    <header id="headerH">
+        <div>
+            <h1>Gabriel</h1>
+
+            <label for="botao-menu">&#9776;</label>
+        </div>
+    </header>
     <header id="headerV">
+
         <div id="headerVCircle"></div>
+
         <div id="profile">
-            <div id="profilephoto"></div>
+            <div id="profilePhoto"></div>
             <div id="profileName">GABRIEL</div>
         </div>
 
         <nav id="navMenu">
-            <a href=""><ion-icon name="home-outline"></ion-icon> Inicio
+            <a href="#topo">
+                <ion-icon name="home-outline"></ion-icon> Inicio
             </a>
-            <a href=""><ion-icon name="person-outline"></ion-icon> Sobre mim</a>
-            <a href=""><ion-icon name="build-outline"></ion-icon> Serviços</a>
-            <a href=""><ion-icon name="briefcase-outline"></ion-icon> portfólio</a>
-            <a href=""><ion-icon name="reader-outline"></ion-icon> Blogs</a>
-            <a href=""id="contactLink"><ion-icon name="call-outline"></ion-icon> Contato</a>
+            <a href="#sobreMim">
+                <ion-icon name="person-outline"></ion-icon> Sobre mim
+            </a>
+            <a href="#servico">
+                <ion-icon name="build-outline"></ion-icon> Serviços
+            </a>
+            <a href="#portfolio">
+                <ion-icon name="briefcase-outline"></ion-icon> Portfólio
+            </a>
+            <a href="">
+                <ion-icon name="reader-outline"></ion-icon> Blogs
+            </a>
+            <a href="">
+                <ion-icon name="call-outline"></ion-icon> Contato
+            </a>
         </nav>
 
         <nav id="navSocial">
             <a href="" target="_blank">
-                <ion-icon name="logo-facebook"></ion-icon></a>
-            <a href=""target="_blank">
-                <ion-icon name="logo-twitter"></ion-icon></a>
-            <a href=""target="_blank">
-                <ion-icon name="logo-instagram"></ion-icon></a>
-            <a href=""target="_blank">
-                <ion-icon name="logo-linkedin"></ion-icon></a>
-            <a href=""target="_blank">
-                <ion-icon name="logo-pinterest"></ion-icon></a>
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="" target="_blank">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a href="" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a href="" target="_blank">
+                <ion-icon name="logo-pinterest"></ion-icon>
+            </a>
         </nav>
+
     </header>
 
     <main>
         <section id="sectionInicio">
-            
             <div id="inicioDescricao">
-            <h2>Olá, Eu sou</h2>
-            <h1>Gabriel Henrique</h1>
-            <p>Eu projeto e desenvolvo serviços para clientes de todos os tipos, focado especialmente em criar sites modernos e estilosos, serviços web e lojas online</p>
-            <a download="Curriculo" href="assets/css/docs/Currículo.pdf">Download CV</a>
-        </div>
-
-            <div id="inicioFoto"><img src="assets/css/img/avatar.jpeg" alt="Minha foto"></div>
+                <h2>Olá, Eu sou</h2>
+                <h1>Gabriel Henrique</h1>
+                <p>Eu projeto e desenvolvo serviços para clientes de todos os tipos, focando especialmente em criar
+                    sites modernos e estilosos, serviços web e lojas online.</p>
+                <a download="Currículo - Jaderson Araujo" href="assets/docs/"> Download CV </a>
+            </div>
+            <div id="inicioFoto"><img src="assets/imagens/avatar.jpeg" alt=""></div>
         </section>
 
         <section id="sobreMim">
             <div id="sobreMimGradeFotos">
-                   
-                    <div id="sobreMimFotosColuna1">
-                        <figure class="sobreMimFotos">
-                            <img src="assets/css/img/avatar.jpeg" alt="">
-                        </figure>
-                        <figure class="sobreMimFotos">
-                            <img src="assets/css/img/avatar.jpeg" alt="">
-                        </figure>
-                    </div>
 
-                    <div id="sobreMimFotosColuna2">
-                        <figure class="sobreMimFotos">
-                            <img src="assets/css/img/avatar.jpeg" alt="">
-                        </figure>
-                        <figure class="sobreMimFotos">
-                            <img src="assets/css/img/avatar.jpeg" alt="">
-                        </figure>
-                    </div>
+                <div id="sobreMimFotosColuna1">
+                    <figure class="sobreMimFotos">
+                        <img src="assets/imagens/avatar.jpeg" alt="">
+                    </figure>
+                    <figure class="sobreMimFotos">
+                        <img src="assets/imagens/avatar.jpeg" alt="">
+                    </figure>
+                </div>
+
+                <div id="sobreMimFotosColuna2">
+                    <figure class="sobreMimFotos">
+                        <img src="assets/imagens/avatar.jpeg" alt="">
+                    </figure>
+                    <figure class="sobreMimFotos">
+                        <img src="assets/imagens/avatar.jpeg"">
+                    </figure>
+                </div>
+
+
             </div>
             <div id="sobreMimTexto">
-                <h2> Sobre Mim </h2>
+                <h2>Sobre Mim</h2>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque assumenda ex ratione aliquid veniam exercitationem.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, perferendis. Nemo delectus
+                    consectetur voluptatum non.
                 </p>
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam rerum assumenda dolores illum veniam harum suscipit nisi facilis fugiat? At ipsa iure quasi vitae tenetur aut enim fuga dolor illo?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque officiis optio veniam reprehenderit incidunt ducimus magnam dolor similique asperiores quas. Temporibus placeat laborum nobis magni alias necessitatibus itaque ratione aspernatur.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam iste aperiam officiis possimus
+                    dolore rem repudiandae molestiae dolorem et atque, ipsa illum consectetur quod ducimus error quia
+                    inventore neque libero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla perferendis
+                    pariatur cupiditate nobis at libero quidem repellat quaerat harum delectus dolorem rem quibusdam quo
+                    necessitatibus a, eius possimus nemo? Totam.
                 </p>
+
                 <div id="sobreMimRodape">
+
                     <div>
                         <div class="sobreMimQuantidade">
                             <p>5K</p>
@@ -97,57 +133,187 @@
                             <p>3K</p>
                             <p>Clientes Satisfeitos</p>
                         </div>
-                        <a href=""> Portifólio </a>
+                        <a href=""> Portfólio </a>
                     </div>
+
                 </div>
             </div>
         </section>
 
         <section id="servico">
-            <h2> Serviços </h2>
+            <h2>Serviços</h2>
             <div id="servicoGrid">
+
                 <div class="card">
-                    <h3>Web Design</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex veritatis sapiente fugiat ut, voluptates asperiores consectetur iure repellat voluptatem est, ea expedita aspernatur praesentium. Porro architecto quia distinctio eos commodi.</p>
+                    <div>
+                        <ion-icon name="call-outline"></ion-icon>
+                    </div>
+                    <div>
+                        <h3>Web Design</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi consequuntur cum recusandae hic
+                            aperiam blanditiis quae maxime mollitia ipsam doloremque earum, officiis neque odit illum amet
+                            laudantium quibusdam quo accusantium.</p>
+                    </div>
                 </div>
 
                 <div class="card">
-                    <h3>Web Design</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex veritatis sapiente fugiat ut, voluptates asperiores consectetur iure repellat voluptatem est, ea expedita aspernatur praesentium. Porro architecto quia distinctio eos commodi.</p>
+                    <div>
+                        <ion-icon name="call-outline"></ion-icon>
+                    </div>
+                    <div>
+                        <h3>Web Design</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi consequuntur cum recusandae hic
+                            aperiam blanditiis quae maxime mollitia ipsam doloremque earum, officiis neque odit illum amet
+                            laudantium quibusdam quo accusantium.</p>
+                    </div>
                 </div>
 
                 <div class="card">
-                    <h3>Web Design</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex veritatis sapiente fugiat ut, voluptates asperiores consectetur iure repellat voluptatem est, ea expedita aspernatur praesentium. Porro architecto quia distinctio eos commodi.</p>
+                    <div>
+                        <ion-icon name="call-outline"></ion-icon>
+                    </div>
+                    <div>
+                        <h3>Web Design</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi consequuntur cum recusandae hic
+                            aperiam blanditiis quae maxime mollitia ipsam doloremque earum, officiis neque odit illum amet
+                            laudantium quibusdam quo accusantium.</p>
+                    </div>
                 </div>
 
                 <div class="card">
-                    <h3>Web Design</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex veritatis sapiente fugiat ut, voluptates asperiores consectetur iure repellat voluptatem est, ea expedita aspernatur praesentium. Porro architecto quia distinctio eos commodi.</p>
+                    <div>
+                        <ion-icon name="call-outline"></ion-icon>
+                    </div>
+                    <div>
+                        <h3>Web Design</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi consequuntur cum recusandae hic
+                            aperiam blanditiis quae maxime mollitia ipsam doloremque earum, officiis neque odit illum amet
+                            laudantium quibusdam quo accusantium.</p>
+                    </div>
                 </div>
 
                 <div class="card">
-                    <h3>Web Design</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex veritatis sapiente fugiat ut, voluptates asperiores consectetur iure repellat voluptatem est, ea expedita aspernatur praesentium. Porro architecto quia distinctio eos commodi.</p>
+                    <div>
+                        <ion-icon name="call-outline"></ion-icon>
+                    </div>
+                    <div>
+                        <h3>Web Design</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi consequuntur cum recusandae hic
+                            aperiam blanditiis quae maxime mollitia ipsam doloremque earum, officiis neque odit illum amet
+                            laudantium quibusdam quo accusantium.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <ion-icon name="call-outline"></ion-icon>
+                    </div>
+                    <div>
+                        <h3>Web Design</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi consequuntur cum recusandae hic
+                            aperiam blanditiis quae maxime mollitia ipsam doloremque earum, officiis neque odit illum amet
+                            laudantium quibusdam quo accusantium.</p>
+                    </div>
                 </div>
 
             </div>
+
         </section>
 
         <section id="portfolio">
-            <div class="portfolioCardImg">
-                <div>
-                    <img src="assets/css/img/listalinks.jpeg" alt="">
+            <h2> Portfólio </h2>
+
+            <div id="portfolioGrid">
+
+                <div class="portfolioCardImg">
+                    <div class="overflow">
+                        <div id="img-1"></div>
+                    </div>
+                    <div class="portfolioCardTitulo">
+                        <p>10/05/2024 - Lista de Links</p>
+                        <p>Projeto desenvolvido durante o curso de HTML/CSS - Criação de Websites no Senac de Gurupi.
+                        </p>
+                    </div>
                 </div>
-                <div class="portfolioCardTitulo">
-                    <p>10/05/2024 - Lista de Links</p>
-                    <p>Projeto desenvolvido durante o curso de HTML/CSS - Criação de Websites no senac de gurupi</p>
+
+                <div class="portfolioCardImg">
+                    <div class="overflow">
+                        <div id="img-2"></div>
+                    </div>
+                    <div class="portfolioCardTitulo">
+                        <p>10/05/2024 - Lista de Links</p>
+                        <p>Projeto desenvolvido durante o curso de HTML/CSS - Criação de Websites no Senac de Gurupi.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="portfolioCardImg">
+                    <div class="overflow">
+                        <div id="img-3"></div>
+                    </div>
+                    <div class="portfolioCardTitulo">
+                        <p>10/05/2024 - Lista de Links</p>
+                        <p>Projeto desenvolvido durante o curso de HTML/CSS - Criação de Websites no Senac de Gurupi.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="portfolioCardImg">
+                    <div class="overflow">
+                        <div id="img-4"></div>
+                    </div>
+                    <div class="portfolioCardTitulo">
+                        <p>10/05/2024 - Lista de Links</p>
+                        <p>Projeto desenvolvido durante o curso de HTML/CSS - Criação de Websites no Senac de Gurupi.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            
+            <div id="contatoRow">
+                <div id="contatoRowText">
+                    <h3>Qual a sua história? Entre em Contato</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae neque incidunt explicabo reprehenderit cum expedita vel dignissimos.</p>
+                    <div>
+                        <ion-icon name="person-outline"></ion-icon>
+                        <p> Rua 66, Qd. 158 Lt. 3, nº 1</p>
+                    </div>
+                    <div>
+                        <ion-icon name="person-outline"></ion-icon>
+                        <p> gabrilmarinho@gmail.com</p>
+                    </div>
+                    <div>
+                        <ion-icon name="person-outline"></ion-icon>
+                        <p> +55 63 999401423 </p>
+                    </div>
+                </div>
+                
+                <div id="contatoRowForm">
+                    <h3> Escreva Algo </h3>
+
+                    <div>
+                        <input type="text" id="inputName" placeholder="Nome">
+                        <input type="email" name="" id="inputE-mail" placeholder="E-mail">
+                    </div>
+                    <input type="text" id="inputSubject" placeholder="Assunto">
+                    <textarea name="" id="" placeholder="Sua Mensagem"></textarea>
+                    <a href="">Enviar</a>
                 </div>
             </div>
         </section>
+
     </main>
-    
+
+
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>

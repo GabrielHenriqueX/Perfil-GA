@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-*{
+* {
     margin: 0;
-    padding:0 ;
+    padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -11,7 +15,45 @@
     --border-color: rgba(255, 255, 255, 0.1);
     --background-header: #0c0c14;
     --background-main: #10101a;
-    --details:#2fbf71;
+    --details: #2fbf71;
+}
+
+/* Cabeçalho vertical fixo */
+#headerH {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background: var(--background-main);
+    color: var(--text-color);
+    font-family: "Rubik", sans-serif;
+    z-index: 3;
+    display: none;
+}
+
+#headerH div {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#botao-menu {
+    display: none;
+}
+
+label[for="botao-menu"] {
+    cursor: pointer;
+    background: var(--details);
+    font-size: 30px;
+    color: var(--text-color);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 #headerV {
@@ -21,62 +63,70 @@
     background: var(--background-header);
     color: var(--text-color);
     font-family: "Rubik", sans-serif;
-    overflow:hidden;
-    
+    overflow: hidden;
+    z-index: 3;
 }
+
 #headerVCircle {
     background: var(--details);
-    width: 318px;
-    height: 318px;
+    width: 310px;
+    height: 310px;
     border-radius: 50%;
     position: absolute;
     top: -180px;
     left: -50px;
     z-index: -1;
 }
+
 #profile {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 65px 0 0;
 }
-#profilephoto {
+
+#profilePhoto {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     border: 5px solid var(--text-color);
-    background:url(../css/img/avatar.jpeg) no-repeat center center/cover ;
-
+    background: url(../imagens/avatar.jpeg) no-repeat center center/cover;
 }
 
 #profileName {
     margin-top: 10px;
-    letter-spacing:2px ;
+    letter-spacing: 2px;
 }
 
-#navMenu{
+#navMenu {
     margin: 45px 0;
 }
 
 #navMenu a {
-    display: block;
+    display: flex;
     color: var(--text-color);
     text-decoration: none;
     text-transform: uppercase;
     padding: 15px 30px;
     font-size: 12px;
     letter-spacing: 3px;
-    border-bottom: 3px solid var(--border-color);
+    border-bottom:  1px solid var(--border-color);
 }
-a#contactLink{
-    border-bottom:none;
+
+#navMenu ion-icon {
+    margin-right: 10px;
 }
-#navMenu a:hover{
+
+#navMenu a:nth-child(n+6) {
+    border-bottom: none;
+}
+
+#navMenu a:hover {
     color: var(--details);
     box-shadow: inset 3px 0 0 var(--details);
 }
 
-#navSocial{
+#navSocial {
     display: flex;
     justify-content: center;
     position: fixed;
@@ -94,12 +144,13 @@ a#contactLink{
     border-radius: 50%;
     transition: background 0.2s;
     padding: 8px;
-
 }
-#navSocial a:hover{
+
+#navSocial a:hover {
     background: var(--details);
 }
 
+/* Conteúdo Principal */
 main {
     position: relative;
     margin-left: 250px;
@@ -107,7 +158,7 @@ main {
     min-height: 100vh;
     height: auto;
     color: var(--text-color);
-    font-family: "Rubik", sans-serif;
+    font-family: "Rubik", sans-serif;    
 }
 
 section {
@@ -121,7 +172,7 @@ section a {
     text-decoration: none;
     color: var(--text-color);
     display: flex;
-    width: 160px;/* Tamanho */
+    width: 160px;
     background: var(--details);
     box-shadow: 3px 3px 0px var(--text-color);
     justify-content: center;
@@ -132,14 +183,19 @@ section p {
     font-size: 18px;
     font-weight: lighter;
     margin-bottom: 20px;
-    line-height: 1.7;/* Altura de Linha */
-    text-align: justify;/* Texto Justificado */
+    line-height: 1.7;
+    text-align: justify;
 }
 
 section h2 {
     font-size: 25px;
     font-weight: normal;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    padding: 20px 0;
+}
+
+section h3 {
+    margin-bottom: 30px;
 }
 
 section#sectionInicio {
@@ -149,7 +205,7 @@ section#sectionInicio {
     flex-wrap: wrap;
 }
 
-section#sectionInicio>div {
+section#sectionInicio>div{
     width: 49%;
     min-width: 300px;
 }
@@ -160,8 +216,8 @@ section#sectionInicio h1 {
 }
 
 section#sectionInicio img {
-    width: 80%;
-    border-radius: 60%;
+    width: 100%;
+    border-radius: 50%;
     border: 2px solid var(--text-color);
 }
 
@@ -172,8 +228,9 @@ section#sobreMim {
     flex-wrap: wrap;
 }
 
-section#sobreMim div {
+section#sobreMim>div {
     width: 49%;
+    min-width: 300px;
 }
 
 #sobreMimGradeFotos {
@@ -200,7 +257,7 @@ section#sobreMim h2 {
 
 #sobreMimRodape {
     display: flex;
-    gap: 80px;
+    gap: 10px;
 }
 
 .sobreMimQuantidade {
@@ -232,6 +289,11 @@ section#servico #servicoGrid {
     background: var(--background-header);
     margin-bottom: 20px;
     padding: 40px;
+    display: flex;
+}
+
+.card ion-icon {
+    font-size: 70px;
 }
 
 .card:hover {
@@ -242,42 +304,129 @@ section#servico h2 {
     font-weight: bolder;
 }
 
-.portfolioCardImg {
-    position: relative;
-    width: 500px;
-    height: 350px;
+section#portfolio #portfolioGrid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.portfolioCardImg>div:first-child {
+.portfolioCardImg {
+    position: relative;
+    width: 49%;
+    min-width: 300px;
+    height: 250px;
+    margin-bottom: 100px;
+}
+
+.overflow {
+    width: 100%;
+    height: 100%;
     overflow: hidden;
 }
 
-.portfolioCardImg img {
-    width: 100%;
+.overflow>div {
+    height: 100%;
 }
 
-.portfolioCardImg:hover img {
+.overflow>div:hover {
     transform: scale(1.1);
 }
 
-.portfolioCardTitulo {
+.overflow #img-1 {
+    background: url(../imagens/listalinks.jpeg) no-repeat center center/cover;
+}
+
+.overflow #img-2 {
+    background: url(../imagens/listalinks.jpeg) no-repeat center center/cover;
+}
+
+.overflow #img-3 {
+    background: url(../imagens/listalinks.jpeg) no-repeat center center/cover;
+}
+
+.overflow #img-4 {
+    background: url(../imagens/listalinks.jpeg) no-repeat center center/cover;
+}
+
+section#portfolio .portfolioCardTitulo {
     position: absolute;
-    width: 80%;
-    height: 200px;
+    width: 90%;
+    height: auto; /* 150px */
     background: var(--background-header);
-    bottom: -60%;
+    bottom: -30%;
     right: 0;
     padding: 20px;
 }
+
+.portfolioCardTitulo p {
+    font-size: 12;
+}
+
+.portfolioCardTitulo p:last-child {
+    font-weight: bolder;
+}
+
+
+section#contato #contatoRow {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+section#contato #contatoRow>div {
+    width: 49%;
+    min-height: 300px;
+    background: var(--background-header);
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+section#contato #contatoRowText div {
+    display: flex;
+    align-items: center;
+}
+
+section#contato #contatoRowText div p {
+    margin: auto 10px 0;
+}
+
+section#contato input {
+    background: none;
+    border: 1px solid var(--text-color);
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#contatoRowForm div {
+    display: flex;
+    justify-content: space-between;
+}
+
+section#contato #inputName, #inputE-mail {
+    width: 49%;
+}
+
+section#contato #inputSubject {
+    width: 100%;
+}
+
+section#contato textarea {
+    background: none;
+    border: 1px solid var(--text-color);
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+}
+
 
 @media (max-width: 1200px) {
     #headerH {
         display: flex;
     }
-
+    
     #headerV {
         margin-left: -250px;
-        transition: all 0,4s;
+        transition: all 0.4s;
         top: 0;
     }
     main {
@@ -298,12 +447,12 @@ section#servico h2 {
         justify-content: center;
     }
 
-    section#sectionInicio #inicioDescricao {
+    section#sectionInicio #inicioDescricao{
         width: 100%;
     }
 
     section#sectionInicio #inicioFoto {
-        margin: 0 auto;
+        margin: 50px 0 auto;
     }
 
     section#sobreMim #sobreMimTexto {
@@ -314,8 +463,14 @@ section#servico h2 {
         margin: 50px 0 auto;
         width: 100%;
     }
-
+    
     section#servico .card {
         width: 100%;
     }
+
+    .portfolioCardImg {
+        width: 100%;
+        margin-bottom: 200px;
+    }
+    
 }
